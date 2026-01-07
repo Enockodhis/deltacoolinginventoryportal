@@ -4,11 +4,15 @@ export default function Header({ userName, onLogout }) {
   return (
     <header className="app-header">
       <div className="header-left">
-        <span className="company-name">DELTA COOLING SYSTEMS LTD</span>
-      </div>
+        <img
+            src="/images/deltalogo.png"
+            alt="Delta Cooling Systems Logo"
+            className="logo"
+          />
+        <span className="company-name">DELTA COOLING SYSTEMS LTD INTERNAL INVENTORY PORTAL</span>
+        </div>
 
       <div className="header-right">
-        <button className="header-btn firebase">Firebase</button>
         <button className="header-btn logout" onClick={onLogout}>
           {userName} (Logout)
         </button>

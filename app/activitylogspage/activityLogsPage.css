@@ -1,0 +1,25 @@
+.view-btn {
+background: #66bb6a;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 8px;
+}
+
+
+.logs-table {
+width: 100%;
+background: #f1f8f1;
+border-collapse: collapse;
+}
+
+
+.logs-table th {
+background: #a5d6a7;
+padding: 0.6rem;
+}
+
+
+.logs-table td {
+padding: 0.6rem;
+border-bottom: 1px solid #c8e6c9;
+}

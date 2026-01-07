@@ -125,6 +125,73 @@
   cursor: not-allowed;
   color: #f3f4f6;
 }
+/* Password input container */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  width: 100%;
+  padding: 12px 45px 12px 15px; /* Extra right padding for button */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.password-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.password-input.input-error {
+  border-color: #e74c3c;
+}
+
+.password-input.input-error:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.1);
+}
+
+/* Password toggle button */
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  z-index: 2;
+}
+
+.password-toggle-btn:hover {
+  color: #4CAF50;
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+  color: #4CAF50;
+}
+
+.password-toggle-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.password-toggle-btn svg {
+  width: 18px;
+  height: 18px;
+}
 
 /* ===============================
    Error Message
@@ -172,4 +239,25 @@
   text-align: center;
   font-size: 0.75rem;
   color: #6b7280;
+}
+/* Error states */
+.input-error {
+  border-color: #dc3545 !important;
+  background-color: #fff8f8;
+}
+
+.field-error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.general-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 16px 0;
+  color: #721c24;
 }

@@ -37,14 +37,19 @@
 }
 
 .menu li {
-  padding: 0.7rem 0.5rem;
+  padding: 0.7rem 0.8rem;
   cursor: pointer;
-  border-radius: 0.35rem;
-  transition: background 0.2s ease;
+  border-radius: 0.6rem;
+  transition: background 0.2s ease, padding-left 0.2s ease;
 }
 
-.menu li:hover,
 .menu li.active {
+  background: #2c5aa0;
+  font-weight: 600;
+  padding-left: 1.2rem;
+}
+
+.menu li:hover {
   background: #256f3f;
 }
 
@@ -245,6 +250,11 @@
   border-radius: 0.3rem;
 }
 
+.logo {
+  height: 40px;
+  width: auto;
+}
+
 .header-right {
   display: flex;
   gap: 0.5rem;
@@ -256,11 +266,6 @@
   border-radius: 0.3rem;
   font-weight: 600;
   cursor: pointer;
-}
-
-.header-btn.firebase {
-  background: #facc15;
-  color: #1f2937;
 }
 
 .header-btn.logout {

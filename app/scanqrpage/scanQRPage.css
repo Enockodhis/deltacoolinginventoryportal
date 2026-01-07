@@ -1,0 +1,53 @@
+.page-container {
+background: #eaf5ea;
+padding: 2rem;
+border-radius: 12px;
+}
+
+
+.page-title {
+color: #1b5e20;
+font-size: 1.5rem;
+}
+
+
+.page-subtitle {
+color: #2e7d32;
+margin-bottom: 1.5rem;
+}
+
+
+.qr-box {
+background: #c8e6c9;
+padding: 2rem;
+border-radius: 16px;
+display: flex;
+justify-content: center;
+}
+
+
+.qr-frame {
+width: 260px;
+height: 180px;
+border: 3px dashed #2e7d32;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.qr-placeholder {
+font-size: 2rem;
+color: #1b5e20;
+}
+
+
+.cancel-btn {
+margin-top: 1.5rem;
+background: #81c784;
+color: #1b5e20;
+padding: 0.6rem 1.5rem;
+border-radius: 8px;
+border: none;
+cursor: pointer;
+}

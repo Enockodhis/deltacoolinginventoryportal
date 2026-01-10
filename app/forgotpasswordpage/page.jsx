@@ -138,16 +138,12 @@ export default function forgotpasswordpage() {
               <div className="auth-links">
                 <button 
                   type="button" 
-                  className="link-button" 
+                  className="forgot-link-button" 
                   onClick={handleBackToLogin}
                   disabled={loading}
                 >
-                  ← Back to Login
+                  Back to Login
                 </button>
-                <span className="separator">|</span>
-                <Link href="/register" className="link create-account">
-                  Create an account
-                </Link>
               </div>
             </div>
           </form>
